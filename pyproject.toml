@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pytorch-play"
+version = "0.1.0"
+description = ""
+authors = ["Oliver Higgs <oliver.s.higgs@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pytorch_play"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.0"
+torchvision = "^0.15.1"
+torchaudio = "^2.0.1"
+matplotlib = "^3.7.1"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.10.0"
+ipdb = "^0.13.11"
+mypy = "^1.0.0"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
